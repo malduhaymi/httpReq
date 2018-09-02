@@ -22,10 +22,10 @@ server=""
 con="ksa"
 def getValue( parameters ):
     x=stringHeaders.split(parameters)
-    hello=x[1].split(",")[0].split(":")[1]
+    arraylist=x[1].split(",")[0].split(":")[1]
     #print hello
-    hello=hello.replace("'","")
-    return hello
+    arraylist=arraylist.replace("'","")
+    return arraylist
 
 with open('url.txt') as urls:
     
@@ -42,9 +42,6 @@ with open('url.txt') as urls:
             #print headers
             stringHeaders=str(headers)
             #print stringHeaders
-
-
-           
                 
             #read from HTTP RESP HEADER
             try:
